@@ -2,9 +2,9 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ title }}</h1>
-    <a :href="hisoka_website"> my blog </a>
-    <input type="text" :value="hisoka_name"> </input>
-    <p v-html="hisoka_html"></p>
+    <p> {{myInt}} </p>
+    <button> add </button>
+    <button> subtract </button>
   </div>
 </template>
 
@@ -13,10 +13,8 @@ export default {
   name: 'app',
   data () {
     return {
-      title: 'Contoh v-bind',
-      hisoka_website: 'http://dimensitutupbotol.blogspot.co.id',
-      hisoka_name: 'Hisoka Poipo',
-      hisoka_html:'<a href="http://dimensitutupbotol.blogspot.co.id"> hisoka blog </a>'
+      title: 'Contoh Event vuejs',
+      myInt: 0
     }
   }
 }
